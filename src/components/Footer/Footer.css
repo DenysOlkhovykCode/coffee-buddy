@@ -1,0 +1,38 @@
+.footer {
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+  scroll-margin-top: 20vh;
+}
+
+.footer__social-media {
+  margin-bottom: 15px;
+}
+
+.footer__icon {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer__icon:hover {
+  text-decoration: underline;
+}
+
+.footer__contact {
+  margin-bottom: 15px;
+}
+
+.footer__phone,
+.footer__email {
+  margin: 5px 0;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  margin-top: 10px;
+}

@@ -1,0 +1,40 @@
+.reviews-section {
+  padding: 20px 20px;
+  background-color: #f7f3f5;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.review-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 2px solid #403234;
+}
+
+.review-text {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.review-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

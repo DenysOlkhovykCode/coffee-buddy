@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e2c2b3;
+  color: #564346;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-size: clamp(20px, 5vw, 40px);
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: clamp(50px, 10vw, 70px);
+  height: clamp(50px, 10vw, 70px);
+  border-radius: 10px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2vw;
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: #564346;
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.order-btn {
+  background-color: #403234;
+  color: #fff;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: clamp(100px, 12vw, 150px);
+  height: 50px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.order-btn:hover {
+  background-color: #564346;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.order-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.burger-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #564346;
+}
+
+/* Мобільна версія */
+@media (max-width: 1150px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: -10px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #e2c2b3;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .menu.menu-open {
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
+  }
+
+  .burger-btn {
+    display: block;
+  }
+}

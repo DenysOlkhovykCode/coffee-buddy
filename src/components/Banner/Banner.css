@@ -1,0 +1,63 @@
+.banner {
+  position: sticky;
+  margin-top: clamp(8px, 13vw, 170px);
+  text-align: center;
+  color: white;
+  height: 350px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  scroll-margin-top: 180px;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/public/images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.container {
+  margin-top: -1vh;
+  margin-right: 6vw;
+  max-width: 55%;
+  font-size: clamp(8px, 1.6vw, 14px);
+}
+
+.banner h1 {
+  font-size: 3em;
+}
+
+.banner p {
+  font-size: 1.5em;
+}
+
+.banner button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: #403234;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.banner button:hover {
+  background-color: #564346;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banner button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
