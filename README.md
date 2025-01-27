@@ -1,8 +1,14 @@
-# React + Vite
+# CoffeeBuddy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CoffeeBuddy — це сайт для любителів кави, який дозволяє обирати різні сорти кави та оформлювати замовлення. Сайт має сучасний інтерфейс, зручну навігацію та інтерактивні функції.
 
-Currently, two official plugins are available:
+Проєкт розгорнутий на GitHub Pages. Ви можете переглянути сайт за наступним посиланням:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://denysolkhovykcode.github.io/coffee-buddy/
+
+## Технології
+
+Проєкт побудований за допомогою наступних технологій:
+- **Vite** — швидкий збірник для сучасних веб-застосунків.
+- **React.js** — бібліотека для створення інтерфейсів користувача.
+- **GitHub Pages** — хостинг для публікації статичних веб-сайтів.
